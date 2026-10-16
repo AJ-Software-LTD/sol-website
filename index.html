@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOL — The solar system, live on your desktop</title>
+<meta name="description" content="SOL turns your Mac's desktop into the real solar system, live. Built by AJ.">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root { --bg: #000; --text: #f2f2f2; --muted: #9a9a9a; --faint: #5c5c5c; --card: #0d0d0f; --line: #1d1d21; --neon: #39ff14; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif; }
+  a { color: var(--text); }
+  main { max-width: 1040px; margin: 0 auto; padding: 0 16px 80px; }
+  header { text-align: center; padding: 88px 0 48px; }
+  header img { width: 112px; height: 112px; }
+  h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.08; margin: 18px 0 10px; letter-spacing: -0.02em; font-weight: 600; }
+  .by { color: var(--muted); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .lead { color: var(--muted); font-size: clamp(18px, 2.4vw, 21px); max-width: 640px; margin: 18px auto 30px; }
+  .store { display: inline-block; padding: 12px 22px; border-radius: 999px; border: 1px solid #333; color: var(--muted); text-decoration: none; font-size: 15px; }
+  video, .shot { width: 100%; border-radius: 14px; border: 1px solid var(--line); display: block; background: #000; }
+  section { margin-top: 72px; }
+  h2 { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); margin: 0 0 18px; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .shots { display: grid; gap: 16px; }
+  .pro { border-color: rgba(57, 255, 20, 0.3); }
+  .badge { display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; color: var(--neon); border: 1px solid rgba(57, 255, 20, 0.7); border-radius: 999px; padding: 1px 7px; vertical-align: 3px; margin-left: 6px; }
+  ul.ticks { list-style: none; padding: 0; margin: 12px 0 0; color: var(--muted); font-size: 15px; }
+  ul.ticks li { padding-left: 22px; position: relative; margin: 6px 0; }
+  ul.ticks li::before { content: "✓"; color: var(--neon); position: absolute; left: 0; font-weight: 700; }
+  footer { border-top: 1px solid var(--line); margin-top: 80px; padding-top: 24px; color: var(--faint); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="assets/icon.png" alt="SOL app icon">
+    <h1>The solar system,<br>live on your desktop.</h1>
+    <div class="by">SOL · Built by AJ</div>
+    <p class="lead">Every planet exactly where it really is, right now, moving as the real one does. Minimal, dynamic and dark, so it can live behind your work.</p>
+    <span class="store">Coming soon to the Mac App Store</span>
+  </header>
+
+  <video src="assets/sol-preview.mp4" autoplay muted loop playsinline aria-label="Three years of the solar system in thirty seconds, ending on the 1596 BC alignment"></video>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card"><h3>Real positions</h3><p>Calculated from NASA JPL's orbital elements, for any moment from 3000 BC to 3000 AD.</p></div>
+      <div class="card"><h3>Travel through time</h3><p>Speed time up to a year a second, pause, go back to now, or jump to any date.</p></div>
+      <div class="card"><h3>Notable dates</h3><p>The tightest planetary alignment in 6,000 years, the 1769 transit of Venus, the impact that ended the dinosaurs, and more.</p></div>
+      <div class="card"><h3>A living Sun</h3><p>Solar flares, asteroids on smooth, gravity-bent paths, and the occasional supernova. Earth is never hit.</p></div>
+      <div class="card"><h3>Made for the Mac</h3><p>A menu bar app for every display and desktop. About 1% of one processor core in normal use.</p></div>
+      <div class="card"><h3>Private</h3><p>No account, no ads, no tracking. SOL collects no data at all.</p></div>
+    </div>
+  </section>
+
+  <section class="shots">
+    <h2>Screenshots</h2>
+    <img class="shot" src="assets/1-minimal-dynamic-dark.jpg" alt="SOL: the solar system under a field of stars">
+    <img class="shot" src="assets/2-the-day-you-were-born.jpg" alt="SOL's Go to Date panel, showing the planets on 12 June 1992">
+    <img class="shot" src="assets/3-free-pro-for-more.jpg" alt="SOL's menu, as a Free user sees it">
+  </section>
+
+  <section>
+    <h2>Free, with Pro for more</h2>
+    <div class="grid">
+      <div class="card"><h3>SOL</h3><p>Free to use, for as long as you like: the live solar system, two notable dates, playback up to a week a second and every effect at its standard settings.</p></div>
+      <div class="card pro"><h3>SOL Pro<span class="badge">PRO</span></h3><p>A one-time purchase, not a subscription. Works on every Mac signed in to your Apple Account.</p>
+        <ul class="ticks"><li>Go to any date</li><li>Every notable date</li><li>Playback up to a year a second</li><li>Every flare, asteroid, supernova and star setting</li><li>60 and 120 fps</li><li>OLED burn-in protection</li></ul></div>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <div class="card">
+      <h3>Need help?</h3>
+      <p>Open an issue on <a href="https://github.com/built-by-aj/sol-website/issues">GitHub</a> and I'll get back to you. For purchases: SOL Pro is restored automatically on any Mac signed in to your Apple Account, or with <em>Restore Purchases</em> in the SOL Pro window. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Alexander Jennings · Built by AJ</span>
+    <span><a href="https://built-by-aj.github.io/sol-privacy/">Privacy Policy</a> · <a href="#support">Support</a></span>
+  </footer>
+</main>
+</body>
+</html>
