@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOL — Accessibility</title>
+<meta name="description" content="How SOL works with VoiceOver, Voice Control, the keyboard, larger text, High Contrast and Reduce Motion, and the guidance it follows. Every accessibility option is free.">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root { --bg: #000; --text: #f2f2f2; --muted: #a3a3a3; --faint: #8a8a8a; --card: #0d0d0f; --line: #1d1d21; --neon: #39ff14; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif; }
+  a { color: var(--text); }
+  a:focus-visible { outline: 2px solid var(--neon); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 16px; top: 16px; background: var(--card); padding: 8px 14px; border-radius: 8px; }
+  main { max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+  header { padding: 72px 0 32px; }
+  header a.home { color: var(--muted); text-decoration: none; font-size: 15px; }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.08; margin: 18px 0 12px; letter-spacing: -0.02em; font-weight: 600; }
+  .lead { color: var(--muted); font-size: clamp(18px, 2.4vw, 21px); max-width: 680px; margin: 0; }
+  section { margin-top: 56px; }
+  h2 { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); margin: 0 0 16px; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+  .card p, .card li { margin: 0; color: var(--muted); font-size: 15px; }
+  .card ul { margin: 8px 0 0; padding-left: 20px; }
+  .card li { margin: 4px 0; }
+  kbd { font: 14px ui-monospace, "SF Mono", monospace; border: 1px solid #333; border-radius: 5px; padding: 0 5px; color: var(--text); }
+  p.note { color: var(--muted); font-size: 15px; max-width: 680px; }
+  footer { border-top: 1px solid var(--line); margin-top: 80px; padding-top: 24px; color: var(--faint); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<main id="content">
+  <header>
+    <a class="home" href="./">← SOL</a>
+    <h1>Accessibility</h1>
+    <p class="lead">The wonder of the night sky shouldn't depend on being able to see it, or on using a mouse. SOL is built on the Mac's own accessibility features, and every accessibility option in SOL is free.</p>
+  </header>
+
+  <section aria-labelledby="using">
+    <h2 id="using">Using SOL your way</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>VoiceOver</h3>
+        <p>With VoiceOver on, SOL's menu becomes a Simplified Menu of standard Mac menu items. Each setting says whether it's on or off and what it does; each slider becomes a list of its options. The notable dates are read with their explanations.</p>
+      </div>
+      <div class="card">
+        <h3>Voice Control</h3>
+        <p>Every control has a name to say. Sliders answer to "Increment" and "Decrement", by name ("Increment Speed") or by number. For choosing from lists, turn on Accessibility ▸ Simplified Menu.</p>
+      </div>
+      <div class="card">
+        <h3>Keyboard</h3>
+        <p>Open the menu with <kbd>Control</kbd>-<kbd>F8</kbd>, then use the arrow keys. <kbd>Space</kbd> ticks a setting; <kbd>Space</kbd> or <kbd>=</kbd> and <kbd>−</kbd> or <kbd>Delete</kbd> move a slider; <kbd>Return</kbd> chooses; <kbd>Escape</kbd> closes SOL's windows.</p>
+      </div>
+      <div class="card">
+        <h3>Larger text</h3>
+        <p>Accessibility ▸ Text size: Small, Normal, Large or Largest (double), across the menu and SOL's windows. Text is never smaller than 10 points, and every control is at least 20 points tall to click, at every size.</p>
+      </div>
+      <div class="card">
+        <h3>High Contrast</h3>
+        <p>Stronger text, outlines and slider tracks. It's on automatically whenever your Mac's Increase Contrast is on.</p>
+      </div>
+      <div class="card">
+        <h3>Reduce Motion</h3>
+        <p>Keeps the Sun still, stops flares, shooting stars and supernovae, and moves to a date at once instead of sweeping the planets round. It's on automatically whenever your Mac's Reduce Motion is on.</p>
+      </div>
+      <div class="card">
+        <h3>Never colour alone</h3>
+        <p>Pro features are marked with the word PRO, a slider's Pro range is dotted, and with Differentiate Without Color the active badge reads ✓PRO.</p>
+      </div>
+      <div class="card">
+        <h3>The solar system in words</h3>
+        <p>Explore the Sky ▸ Planets describes the wallpaper: the date shown and each planet's distance from the Sun, its angle around it and where it sits on screen. At a planetary alignment it says how tight the grouping is.</p>
+      </div>
+    </div>
+    <p class="note">SOL follows your Mac's accessibility settings and never turns them off. Accessibility ▸ Mac Accessibility Settings… opens them, and the first-launch window offers text size, High Contrast and Reduce Motion before anything else.</p>
+  </section>
+
+  <section aria-labelledby="standards">
+    <h2 id="standards">The guidance SOL follows</h2>
+    <div class="card">
+      <ul>
+        <li><a href="https://developer.apple.com/design/human-interface-guidelines/accessibility">Apple Human Interface Guidelines: Accessibility</a>, including Apple's minimums of 10-point text and 20-point click targets on the Mac.</li>
+        <li><a href="https://developer.apple.com/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels">Apple's Accessibility Nutrition Labels</a> criteria, which decide what SOL declares on the App Store.</li>
+        <li><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a> contrast ratios as a measuring stick: at least 4.5:1 for text and 3:1 for large text, outlines and icons.</li>
+        <li>Apple's <a href="https://developer.apple.com/documentation/accessibility/">accessibility frameworks</a> for every control, with SOL's own controls named, labelled and given actions for assistive technologies.</li>
+      </ul>
+    </div>
+    <p class="note">Following this guidance is how SOL aims to do right by the people using it; it isn't a certification. SOL is tested by hand with VoiceOver and Voice Control, its controls are checked through the Mac's accessibility tree, and its text and control sizes are measured at every text size.</p>
+  </section>
+
+  <section aria-labelledby="limits">
+    <h2 id="limits">Known limitations</h2>
+    <div class="card">
+      <ul>
+        <li>In SOL's standard menu, VoiceOver doesn't announce a change made with the keyboard until you move back to that row. The Simplified Menu, which turns on automatically with VoiceOver, avoids this.</li>
+        <li>With Voice Control, after switching between "Show names" and "Show numbers", close and reopen the menu to see the new labels. This is how macOS menus behave.</li>
+        <li>The moving wallpaper is a picture. Its meaning is given in words in Explore the Sky ▸ Planets and in each notable date's explanation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="feedback">
+    <h2 id="feedback">Feedback</h2>
+    <div class="card">
+      <p>If something in SOL doesn't work for you, please <a href="https://github.com/built-by-aj/sol-website/issues">open an issue on GitHub</a>. Accessibility problems are treated as bugs and fixed first.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Alexander Jennings · Built by AJ · Last reviewed October 2026</span>
+    <span><a href="./">SOL</a> · <a href="./#support">Support</a> · <a href="https://built-by-aj.github.io/sol-privacy/">Privacy Policy</a></span>
+  </footer>
+</main>
+</body>
+</html>
